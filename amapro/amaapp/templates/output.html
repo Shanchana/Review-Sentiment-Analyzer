@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <a href="{% url 'link' %}">Home</a>
+    <div class="contain">
+    <h1>Result</h1>
+    {% if results %}
+    <h2> Product Name : {{results.title}} </h2>
+    <h3> Rating : {{results.rating}}</h3>  
+    <h3> Positive : {{results.positive}}%
+        Negative : {{results.negative}}%
+        Neutral : {{results.neutral}}% </h3>
+    
+    <h3 class="op">
+        Overall Sentiment : {{results.overall_r}}
+    </h3>
+
+    {% endif %}
+</div>
+    <style>
+        a{
+            text-decoration: none;
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+            font-size: 20px;
+            padding: 7px;
+        }
+  .contain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+  }
+  .op{
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5px;
+  }
+    </style>
+</body>
+</html>
