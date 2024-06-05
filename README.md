@@ -53,7 +53,7 @@ Follow these steps to run the sentiment analysis:
 ## Project Structure
 
 - sentiment_analysis.py: Contains all the functions for preprocessing, training, scraping, and analyzing reviews.
-- requirements.txt: Lists all the Python dependencies required for the project.
+
 - README.md: Provides an overview and instructions for the project (this file).
 
 ## Contributing
