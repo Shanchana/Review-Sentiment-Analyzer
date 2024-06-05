@@ -5,8 +5,6 @@ This repository contains a Python-based project for scraping Amazon product revi
 ## Table of Contents
 
 - [Overview](#overview)
-- [Installation](#installation)
-- [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
 
@@ -19,40 +17,9 @@ The project aims to classify Amazon product reviews as positive, negative, or ne
 4. *Analyzing Reviews*: Applying the trained model to classify the sentiment of scraped reviews.
 5. *Summarizing Sentiment*: Aggregating sentiment scores to determine the overall sentiment of the reviews.
 
-## Installation
-
-To get started with this project, follow these steps:
-
-1. *Clone the Repository*:
-    sh
-    git clone https://github.com/yourusername/amazon-review-sentiment-analysis.git
-    cd amazon-review-sentiment-analysis
-    
-
-2. *Install Dependencies*:
-    Make sure you have Python installed, then install the required Python packages:
-    sh
-    
-## Usage
-
-Follow these steps to run the sentiment analysis:
-
-1. *Prepare the Training Data*:
-   Place your training data CSV file (e.g., flipkart.csv) in the project directory. This file should contain at least two columns: review and rating.
-
-2. *Run the Main Script*:
-   Execute the main_process function with the URL of the Amazon product reviews you want to analyze:
-    python
-    from sentiment_analysis import main_process
-
-    url = "https://www.amazon.in/dp/product-id"
-    result = main_process(url)
-    print(result)
-    
-
 ## Project Structure
 
-- sentiment_analysis.py: Contains all the functions for preprocessing, training, scraping, and analyzing reviews.
+- amapro folder: Contains all the functions for preprocessing, training, scraping, and analyzing reviews.
 
 - README.md: Provides an overview and instructions for the project (this file).
 
